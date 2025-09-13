@@ -71,7 +71,6 @@ AGE_CHANNEL_MAP = {
     "16": "😎︱𝙉𝙤・𝙪𝙣𝙘・𝙯𝙤𝙣𝙚",
     "17": "😎︱𝙉𝙤・𝙪𝙣𝙘・𝙯𝙤𝙣𝙚",
 }
-}
 
 ARCANE_ID = 437808476106784770
 
@@ -179,5 +178,6 @@ async def on_message(message):
                     # print(f"[DEBUG] No age roles unlocked for {member.display_name} at level 10")
 
 bot.run(os.getenv("DISCORD_TOKEN"))
+
 
 

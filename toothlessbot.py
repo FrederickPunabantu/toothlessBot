@@ -25,16 +25,18 @@ ROLE_MAP = {
     "hip-hop_waiting": "hip-hop",
     "afrobeats_waiting": "afrobeats",
     "yn-music_waiting": "yn-music",
+    "k-pop_waiting": "k-pop",
 }
 
 # Genre role names to channel names
 CHANNEL_MAP = {
-    "rnb": "😩・rnb",
-    "pop": "🧚‍♀️・pop",
-    "rock/metal": "🤘・rock-metal",
-    "hip-hop": "🎤・hip-hop",
-    "afrobeats": "🪘・afrobeats",
-    "yn-music": "🥷・yn-music",
+    "rnb": "😩︱𝑅𝓃𝐵",
+    "pop": "🧚‍♀️︱𝒫𝑜𝓅",
+    "rock/metal": "🤘︱𝑅𝑜𝒸𝓀・𝑀𝑒𝓉𝒶𝓁",
+    "hip-hop": "🎤︱𝐻𝒾𝓅・𝐻𝑜𝓅",
+    "afrobeats": "🪘︱𝒜𝒻𝓇𝑜𝒷𝑒𝒶𝓉𝓈",
+    "yn-music": "🥷︱𝒴𝒩・𝑀𝓊𝓈𝒾𝒸",
+    "k-pop": "🫰︱𝓀・𝓅𝑜𝓅",
 }
 
 # Level 6 waiting roles to element roles
@@ -47,10 +49,10 @@ ELEMENT_ROLE_MAP = {
 
 # Element roles to channels
 ELEMENT_CHANNEL_MAP = {
-    "water": "🌊・water-tribe",
-    "fire": "🔥・fire-nation",
-    "earth": "🪨・earth-kingdom",
-    "air": "🌪️・air-nomads",
+    "water": "🌊︱𝖶𝖺𝗍𝖾𝗋・𝖳𝗋𝗂𝖻𝖾",
+    "fire": "🔥︱𝖥𝗂𝗋𝖾・𝖭𝖺𝗍𝗂𝗈𝗇",
+    "earth": "🪨︱𝖤𝖺𝗋𝗍𝗁・𝖪𝗂𝗇𝗀𝖽𝗈𝗆",
+    "air": "🌪️︱𝖠𝗂𝗋・𝖭𝗈𝗆𝖺𝖽𝗌",
 }
 
 # Level 10 waiting roles to final roles
@@ -64,10 +66,8 @@ AGE_ROLE_MAP = {
 }
 
 AGE_CHANNEL_MAP = {
-    "18+": "🔞・after-dark",
-    "13": "😎・hangout",
-    "14-15": "😎・hangout",
-    "16-17": "😎・hangout",
+    "18+": "🔞︱18_𝘾𝙝𝙖𝙩",
+    "15", "16", "17": "😎︱𝙉𝙤・𝙪𝙣𝙘・𝙯𝙤𝙣𝙚",
 }
 
 ARCANE_ID = 437808476106784770
@@ -176,3 +176,4 @@ async def on_message(message):
                     # print(f"[DEBUG] No age roles unlocked for {member.display_name} at level 10")
 
 bot.run(os.getenv("DISCORD_TOKEN"))
+
